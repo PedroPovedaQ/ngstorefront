@@ -22,13 +22,15 @@ export function reducer(state: CartState = initialState, action: CartAction) {
         ...state.entities,
         [action.payload.id]: action.payload
       };
-      const totalPrice = state.totalPrice + action.payload.price;
+      let totalPrice = state.totalPrice + action.payload.price;
+      totalPrice = parseFloat(totalPrice.toFixed(2));
       return { ...state, entities, totalPrice };
     }
 
     case REMOVE_CART_ITEM_SUCCESS: {
       const { [action.payload.id]: removed, ...entities } = state.entities;
-      const totalPrice = state.totalPrice - removed.price;
+      let totalPrice = state.totalPrice - removed.price;
+      totalPrice = parseFloat(totalPrice.toFixed(2));
       return { ...state, entities, totalPrice };
     }
 

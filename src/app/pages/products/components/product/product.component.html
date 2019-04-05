@@ -1,3 +1,16 @@
-<p>
-  product works!
-</p>
+<div id="product-container">
+  <img [src]="product.image" />
+  <p class="mb0 cl-accent mt10">
+    {{ product.name }}
+  </p>
+  <span class="price" class="lh30 cl-secondary"> ${{ product.price }} </span>
+  <button
+    class="add-to-cart-button"
+    color="primary"
+    mat-raised-button
+    type="button"
+    (click)="added.emit(product)"
+  >
+    Add to Cart
+  </button>
+</div>
