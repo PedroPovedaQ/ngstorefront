@@ -1,16 +1,15 @@
 <div id="page-wrapper">
-  <!--The content below is only a placeholder and can be replaced.-->
   <mat-toolbar color="primary" class="row">
     <button mat-icon-button (click)="snav.toggle()">
       <mat-icon>menu</mat-icon>
     </button>
-    <h1 class="title">Example Storefront</h1>
+    <h1 class="title">ng Storefront</h1>
     <span class="icons">
       <button mat-icon-button routerLink="cart">
         <mat-icon
           class="end-icon"
           aria-hidden="false"
-          matBadge="15"
+          [matBadge]="cartItemCount$ | async"
           matBadgeColor="warn"
           >shopping_cart</mat-icon
         >

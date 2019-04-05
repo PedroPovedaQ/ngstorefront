@@ -1,0 +1,21 @@
+<div class="col-sm-2">
+  <img [src]="product.image" />
+</div>
+
+<div class="col-sm-8">
+  <h4>{{ product.name }}</h4>
+  <p>{{ product.short_description }}</p>
+  <p class="stock-blurb">In stock!</p>
+</div>
+
+<div class="col-sm-2">
+  <h4 id="price">{{ product.price | currency }}</h4>
+  <button
+    mat-raised-button
+    color="primary"
+    (click)="removed.emit(product)"
+    type="button"
+  >
+    Remove <mat-icon>shopping_cart</mat-icon>
+  </button>
+</div>

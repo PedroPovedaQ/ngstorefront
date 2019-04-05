@@ -16,7 +16,7 @@ import { AppComponent } from "./app.component";
 import { AppRoutingModule } from "./app-routing.module";
 import { PageNotFoundComponent } from "./pages/page-not-found/page-not-found.component";
 import { HomeComponent } from "./pages/home/home.component";
-import { CartComponent } from "./pages/cart/cart.component";
+import { CartComponent } from "./pages/cart/containers/cart.component";
 import { StoreModule } from "@ngrx/store";
 import { EffectsModule } from "@ngrx/effects";
 import { StoreDevtoolsModule } from "@ngrx/store-devtools";
@@ -25,12 +25,14 @@ import { ProductService } from "./services/product.service";
 import { HttpClientModule } from "@angular/common/http";
 import { ProductEffects } from "./store/effects/product.effects";
 import { environment } from "../environments/environment";
+import { CartItemComponent } from './pages/cart/components/cart-item/cart-item.component';
 @NgModule({
   declarations: [
     AppComponent,
     PageNotFoundComponent,
     HomeComponent,
-    CartComponent
+    CartComponent,
+    CartItemComponent
   ],
   imports: [
     BrowserModule,

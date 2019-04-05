@@ -3,7 +3,9 @@
   <p class="mb0 cl-accent mt10">
     {{ product.name }}
   </p>
-  <span class="price" class="lh30 cl-secondary"> ${{ product.price }} </span>
+  <span class="price" class="lh30 cl-secondary">
+    {{ product.price | currency }}
+  </span>
   <button
     class="add-to-cart-button"
     color="primary"

@@ -1,4 +1,4 @@
-import { CartComponent } from "./pages/cart/cart.component";
+import { CartComponent } from "./pages/cart/containers/cart.component";
 import { HomeComponent } from "./pages/home/home.component";
 import { NgModule } from "@angular/core";
 import { CommonModule } from "@angular/common";
