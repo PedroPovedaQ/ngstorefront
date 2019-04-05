@@ -1,0 +1,27 @@
+.end-icon {
+  vertical-align: middle;
+}
+
+.icons {
+  margin-left: auto;
+}
+
+mat-toolbar {
+  padding-right: 15px;
+}
+
+#sidenav-content-container {
+  padding-top: 15px;
+}
+
+#sidenav-container,
+#page-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 0;
+}
+
+#title {
+  display: inline;
+}

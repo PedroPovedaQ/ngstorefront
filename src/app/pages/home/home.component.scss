@@ -1,0 +1,86 @@
+#hero-section {
+  margin-top: -15px;
+  height: 600px;
+  width: 100%;
+  background-image: url(/assets/full_width_banner.jpg);
+  background-size: cover;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 75em) {
+  #hero-section {
+    height: 400px;
+  }
+}
+
+.head-image-content {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  margin-left: 15%;
+  h1 {
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    font-size: 3.4rem;
+    margin-bottom: 0;
+  }
+
+  .subtitle {
+    font-size: 0.8rem;
+    max-width: 340px;
+
+    line-height: 1.2rem;
+  }
+}
+
+#samples {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#image-1 {
+  background-image: url(/assets/ban1.jpg);
+  height: 735px;
+}
+
+#image-2 {
+  background-image: url(/assets/ban2.jpg);
+}
+
+#image-3 {
+  background-image: url(/assets/ban3.jpg);
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.offer {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  .title {
+    text-align: center;
+    padding-top: 2rem;
+    font-size: 48px;
+  }
+  .subtitle {
+    text-align: center;
+  }
+}
+
+.offer-small {
+  height: 360px;
+}
+
+.offer-container {
+  padding-bottom: 15px;
+}
+
+a {
+  color: #000000 !important;
+}
